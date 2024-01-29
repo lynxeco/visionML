@@ -11,6 +11,8 @@
 		CE9446D22B6774790004F4F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9446D12B6774790004F4F0 /* ContentView.swift */; };
 		CE9446D42B67747A0004F4F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9446D32B67747A0004F4F0 /* Assets.xcassets */; };
 		CE9446D72B67747A0004F4F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9446D62B67747A0004F4F0 /* Preview Assets.xcassets */; };
+		CE9446DE2B6774990004F4F0 /* CameraFeedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9446DD2B6774990004F4F0 /* CameraFeedManager.swift */; };
+		CE9446E42B67783A0004F4F0 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CE9446E32B67783A0004F4F0 /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		CE9446D12B6774790004F4F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE9446D32B67747A0004F4F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9446D62B67747A0004F4F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE9446DD2B6774990004F4F0 /* CameraFeedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFeedManager.swift; sourceTree = "<group>"; };
+		CE9446E32B67783A0004F4F0 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				CE9446CF2B6774790004F4F0 /* visionMLApp.swift */,
 				CE9446D12B6774790004F4F0 /* ContentView.swift */,
+				CE9446DD2B6774990004F4F0 /* CameraFeedManager.swift */,
+				CE9446E32B67783A0004F4F0 /* Resnet50.mlmodel */,
 				CE9446D32B67747A0004F4F0 /* Assets.xcassets */,
 				CE9446D52B67747A0004F4F0 /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9446E42B67783A0004F4F0 /* Resnet50.mlmodel in Sources */,
 				CE9446D22B6774790004F4F0 /* ContentView.swift in Sources */,
+				CE9446DE2B6774990004F4F0 /* CameraFeedManager.swift in Sources */,
 				CE9446D02B6774790004F4F0 /* visionMLApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +283,7 @@
 				DEVELOPMENT_TEAM = 8WXCDGW78X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +313,7 @@
 				DEVELOPMENT_TEAM = 8WXCDGW78X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
